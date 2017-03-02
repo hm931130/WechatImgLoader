@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <FrameLayout
+        android:id="@+id/layout_imageview"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:background="@mipmap/pic_dir">
+
+        <ImageView
+            android:id="@+id/item_pop_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/item_pop_dirchoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/dir_choose" />
+
+    <LinearLayout
+        android:layout_toRightOf="@id/layout_imageview"
+        android:layout_toLeftOf="@id/item_pop_dirchoose"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/item_pop_dirname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/adfaf"
+            android:textSize="17sp"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/item_pop_dircount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="/adfaf"
+            />
+    </LinearLayout>
+</RelativeLayout>
